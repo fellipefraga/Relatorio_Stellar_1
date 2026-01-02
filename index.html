@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Report Stellar — Market Report 2025</title>
+  <meta name="description" content="Stellar Group Market Report 2025. View the report in Portuguese or English and receive updates from our team." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <div class="logo">Report Stellar</div>
+        <div class="sub" data-i18n="subtitle">Market Report 2025</div>
+      </div>
+
+      <div class="lang">
+        <button class="langBtn" data-lang="en" aria-label="English">EN</button>
+        <button class="langBtn" data-lang="pt" aria-label="Português">PT</button>
+      </div>
+    </header>
+
+    <main class="card">
+      <h1 data-i18n="title">Market Report 2025</h1>
+      <p class="lead" data-i18n="lead">
+        Access the report in your preferred language and receive updates and materials from our team.
+      </p>
+
+      <div class="ctaRow">
+        <a
+          class="btn primary"
+          id="openReport"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://view.publitas.com/reportstellar/report-2025-stellar-english/"
+          data-i18n="openReport"
+        >
+          Open the report
+        </a>
+
+        <a
+          class="btn ghost"
+          id="downloadReport"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://view.publitas.com/reportstellar/report-2025-stellar-english/"
+          data-i18n="viewOnline"
+        >
+          View online
+        </a>
+      </div>
+
+      <hr class="sep" />
+
+      <section class="formBlock">
+        <h2 data-i18n="formTitle">Stay in touch</h2>
+        <p class="small" data-i18n="formLead">
+          Leave your details to receive future editions and updates.
+        </p>
+
+        <!-- Formspree form -->
+        <form
+          id="leadForm"
+          method="POST"
+          action="https://formspree.io/f/xlgeaqkz"
+        >
+          <input type="hidden" name="language" id="languageField" value="en" />
+          <input type="hidden" name="source" value="reportstellar.com" />
+
+          <div class="grid">
+            <div class="field">
+              <label for="firstName" data-i18n="firstNameLabel">First name</label>
+              <input
+                id="firstName"
+                name="first_name"
+                type="text"
+                autocomplete="given-name"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="lastName" data-i18n="lastNameLabel">Last name</label>
+              <input
+                id="lastName"
+                name="last_name"
+                type="text"
+                autocomplete="family-name"
+                required
+              />
+            </div>
+
+            <div class="field full">
+              <label for="email" data-i18n="emailLabel">Work email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+              <div class="hint" data-i18n="emailHint">
+                Preferably your professional email.
+              </div>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button class="btn primary" type="submit" data-i18n="submit">
+              Send
+            </button>
+            <div class="note" data-i18n="privacyNote">
+              By submitting, you agree to be contacted about this report and
+              future editions.
+            </div>
+          </div>
+        </form>
+
+        <div id="status" class="status" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Report Stellar</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
